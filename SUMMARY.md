@@ -208,15 +208,266 @@
   * [6 Security](preface-and-legal-notices/6-security.md)
     * [6.1 General Security Issues](preface-and-legal-notices/6-security/61-general-security-issues.md)
       * 6.1.1 Security Guidelines
-    * 6.2 The MySQL Access Privilege System
-    * 6.3 MySQL User Account Management
-    * 6.4 Using Encrypted Connections
-    * 6.5 Security Plugins
-  * 7 Backup and Recovery
-  * 8 Optimization
-  * 9 Language Structure
-  * 10 Character Sets, Collations, Unicode
-  * 11 Data Types
+      * 6.1.2 Keeping Passwords Secure
+      * 6.1.3 Making MySQL Secure Against Attackers
+      * 6.1.4 Security-Related mysqld Options and Variables
+      * 6.1.5 How to Run MySQL as a Normal User
+      * 6.1.6 Security Issues with LOAD DATA LOCAL
+      * 6.1.7 Client Programming Security Guidelines
+    * [6.2 The MySQL Access Privilege System](preface-and-legal-notices/6-security/62-the-mysql-access-privilege-system.md)
+      * 6.2.1 Privileges Provided by MySQL
+      * 6.2.2 Grant Tables
+      * 6.2.3 Specifying Account Names
+      * 6.2.4 Access Control, Stage 1: Connection Verification
+      * 6.2.5 Access Control, Stage 2: Request Verification
+      * 6.2.6 When Privilege Changes Take Effect
+      * 6.2.7 Troubleshooting Problems Connecting to MySQL
+    * [6.3 MySQL User Account Management](preface-and-legal-notices/6-security/63-mysql-user-account-management.md)
+      * 6.3.1 User Names and Passwords
+      * 6.3.2 Adding User Accounts
+      * 6.3.3 Removing User Accounts
+      * 6.3.4 Reserved User Accounts
+      * 6.3.5 Setting Account Resource Limits
+      * 6.3.6 Assigning Account Passwords
+      * 6.3.7 Password Management
+      * 6.3.8 Password Expiration and Sandbox Mode
+      * 6.3.9 Pluggable Authentication
+      * 6.3.10 Proxy Users
+      * 6.3.11 User Account Locking
+      * 6.3.12 SQL-Based MySQL Account Activity Auditing
+    * [6.4 Using Encrypted Connections](preface-and-legal-notices/6-security/64-using-encrypted-connections.md)
+      * 6.4.1 Configuring MySQL to Use Encrypted Connections
+      * 6.4.2 Command Options for Encrypted Connections
+      * 6.4.3 Creating SSL and RSA Certificates and Keys
+      * 6.4.4 OpenSSL Versus yaSSL
+      * 6.4.5 Building MySQL with Support for Encrypted Connections
+      * 6.4.6 Encrypted Connection Protocols and Ciphers
+      * 6.4.7 Connecting to MySQL Remotely from Windows with SSH
+    * [6.5 Security Plugins](preface-and-legal-notices/6-security/65-security-plugins.md)
+      * 6.5.1 Authentication Plugins
+      * 6.5.2 The Connection-Control Plugins
+      * 6.5.3 The Password Validation Plugin
+      * 6.5.4 The MySQL Keyring
+      * 6.5.5 MySQL Enterprise Audit
+      * 6.5.6 MySQL Enterprise Firewall
+  * [7 Backup and Recovery](preface-and-legal-notices/7-backup-and-recovery.md)
+    * 7.1 Backup and Recovery Types
+    * 7.2 Database Backup Methods
+    * [7.3 Example Backup and Recovery Strategy](preface-and-legal-notices/7-backup-and-recovery/73-example-backup-and-recovery-strategy.md)
+      * 7.3.1 Establishing a Backup Policy
+      * 7.3.2 Using Backups for Recover
+      * 7.3.3 Backup Strategy Summary
+    * [7.4 Using mysqldump for Backups](preface-and-legal-notices/7-backup-and-recovery/74-using-mysqldump-for-backups.md)
+      * 7.4.1 Dumping Data in SQL Format with mysqldump
+      * 7.4.2 Reloading SQL-Format Backups
+      * 7.4.3 Dumping Data in Delimited-Text Format with mysqldump
+      * 7.4.4 Reloading Delimited-Text Format Backups
+      * 7.4.5 mysqldump Tips
+    * [7.5 Point-in-Time \(Incremental\) Recovery Using the Binary Log](preface-and-legal-notices/7-backup-and-recovery/75-point-in-time-incremental-recovery-using-the-binary-log.md)
+      * 7.5.1 Point-in-Time Recovery Using Event Times
+      * 7.5.2 Point-in-Time Recovery Using Event Positions
+    * [7.6 MyISAM Table Maintenance and Crash Recovery](preface-and-legal-notices/7-backup-and-recovery/76-myisam-table-maintenance-and-crash-recovery.md)
+      * 7.6.1 Using myisamchk for Crash Recovery
+      * 7.6.2 How to Check MyISAM Tables for Errors
+      * 7.6.3 How to Repair MyISAM Tables
+      * 7.6.4 MyISAM Table Optimization
+      * 7.6.5 Setting Up a MyISAM Table Maintenance Schedule
+  * [8 Optimization](preface-and-legal-notices/8-optimization.md)
+    * 8.1 Optimization Overview
+    * [8.2 Optimizing SQL Statements](preface-and-legal-notices/8-optimization/82-optimizing-sql-statements.md)
+      * 8.2.1 Optimizing SELECT Statements
+      * 8.2.2 Optimizing Subqueries, Derived Tables, and View References
+      * 8.2.3 Optimizing INFORMATION\_SCHEMA Queries
+      * 8.2.4 Optimizing Data Change Statements
+      * 8.2.5 Optimizing Database Privileges
+      * 8.2.6 Other Optimization Tips
+    * [8.3 Optimization and Indexes](preface-and-legal-notices/8-optimization/83-optimization-and-indexes.md)
+      * 8.3.1 How MySQL Uses Indexes
+      * 8.3.2 Primary Key Optimization
+      * 8.3.3 Foreign Key Optimization
+      * 8.3.4 Column Indexes
+      * 8.3.5 Multiple-Column Indexes
+      * 8.3.6 Verifying Index Usage
+      * 8.3.7 InnoDB and MyISAM Index Statistics Collection
+      * 8.3.8 Comparison of B-Tree and Hash Indexes
+      * 8.3.9 Use of Index Extensions
+      * 8.3.10 Optimizer Use of Generated Column Indexes
+    * [8.4 Optimizing Database Structure](preface-and-legal-notices/8-optimization/84-optimizing-database-structure.md)
+      * 8.4.1 Optimizing Data Size
+      * 8.4.2 Optimizing MySQL Data Types
+      * 8.4.3 Optimizing for Many Tables
+      * 8.4.4 Internal Temporary Table Use in MySQL
+    * [8.5 Optimizing for InnoDB Tables](preface-and-legal-notices/8-optimization/85-optimizing-for-innodb-tables.md)
+      * 8.5.1 Optimizing Storage Layout for InnoDB Tables
+      * 8.5.2 Optimizing InnoDB Transaction Management
+      * 8.5.3 Optimizing InnoDB Read-Only Transactions
+      * 8.5.4 Optimizing InnoDB Redo Logging
+      * 8.5.5 Bulk Data Loading for InnoDB Tables
+      * 8.5.6 Optimizing InnoDB Queries
+      * 8.5.7 Optimizing InnoDB DDL Operations
+      * 8.5.8 Optimizing InnoDB Disk I/O
+      * 8.5.9 Optimizing InnoDB Configuration Variables
+      * 8.5.10 Optimizing InnoDB for Systems with Many Tables
+    * [8.6 Optimizing for MyISAM Tables](preface-and-legal-notices/8-optimization/86-optimizing-for-myisam-tables.md)
+      * 8.6.1 Optimizing MyISAM Queries
+      * 8.6.2 Bulk Data Loading for MyISAM Tables
+      * 8.6.3 Optimizing REPAIR TABLE Statements
+    * 8.7 Optimizing for MEMORY Tables
+    * [8.8 Understanding the Query Execution Plan](preface-and-legal-notices/8-optimization/88-understanding-the-query-execution-plan.md)
+      * 8.8.1 Optimizing Queries with EXPLAIN
+      * 8.8.2 EXPLAIN Output Format
+      * 8.8.3 Extended EXPLAIN Output Format
+      * 8.8.4 Obtaining Execution Plan Information for a Named Connection
+      * 8.8.5 Estimating Query Performance
+    * [8.9 Controlling the Query Optimizer](preface-and-legal-notices/8-optimization/89-controlling-the-query-optimizer.md)
+      * 8.9.1 Controlling Query Plan Evaluation
+      * 8.9.2 Optimizer Hints
+      * 8.9.3 Switchable Optimizations
+      * 8.9.4 Index Hints
+      * 8.9.5 The Optimizer Cost Model
+    * [8.10 Buffering and Caching](preface-and-legal-notices/8-optimization/810-buffering-and-caching.md)
+      * 8.10.1 InnoDB Buffer Pool Optimization
+      * 8.10.2 The MyISAM Key Cache
+      * 8.10.3 The MySQL Query Cache
+      * 8.10.4 Caching of Prepared Statements and Stored Programs
+    * [8.11 Optimizing Locking Operations](preface-and-legal-notices/8-optimization/811-optimizing-locking-operations.md)
+      * 8.11.1 Internal Locking Methods
+      * 8.11.2 Table Locking Issues
+      * 8.11.3 Concurrent Inserts
+      * 8.11.4 Metadata Locking
+      * 8.11.5 External Locking
+    * [8.12 Optimizing the MySQL Server](preface-and-legal-notices/8-optimization/812-optimizing-the-mysql-server.md)
+      * 8.12.1 System Factors
+      * 8.12.2 Optimizing Disk I/O
+      * 8.12.3 Using Symbolic Links
+      * 8.12.4 Optimizing Memory Use
+      * 8.12.5 Optimizing Network Use
+    * [8.13 Measuring Performance \(Benchmarking\)](preface-and-legal-notices/8-optimization/813-measuring-performance-benchmarking.md)
+      * 8.13.1 Measuring the Speed of Expressions and Functions
+      * 8.13.2 Using Your Own Benchmarks
+      * 8.13.3 Measuring Performance with performance\_schema
+    * [8.14 Examining Thread Information](preface-and-legal-notices/8-optimization/814-examining-thread-information.md)
+      * 8.14.1 Thread Command Values
+      * 8.14.2 General Thread States
+      * 8.14.3 Query Cache Thread States
+      * 8.14.4 Replication Master Thread States
+      * 8.14.5 Replication Slave I/O Thread States
+      * 8.14.6 Replication Slave SQL Thread States
+      * 8.14.7 Replication Slave Connection Thread States
+      * 8.14.8 NDB Cluster Thread States
+      * 8.14.9 Event Scheduler Thread States
+  * [9 Language Structure](preface-and-legal-notices/9-language-structure.md)
+    * [9.1 Literal Values](preface-and-legal-notices/9-language-structure/91-literal-values.md)
+      * 9.1.1 String Literals
+      * 9.1.2 Numeric Literals
+      * 9.1.3 Date and Time Literals
+      * 9.1.4 Hexadecimal Literals
+      * 9.1.5 Bit-Value Literals
+      * 9.1.6 Boolean Literals
+      * 9.1.7 NULL Values
+    * [9.2 Schema Object Names](preface-and-legal-notices/9-language-structure/92-schema-object-names.md)
+      * 9.2.1 Identifier Qualifiers
+      * 9.2.2 Identifier Case Sensitivity
+      * 9.2.3 Mapping of Identifiers to File Names
+      * 9.2.4 Function Name Parsing and Resolution
+    * 9.3 Keywords and Reserved Words
+    * 9.4 User-Defined Variables
+    * 9.5 Expression Syntax
+    * 9.6 Comment Syntax
+  * [10 Character Sets, Collations, Unicode](preface-and-legal-notices/10-character-sets-collations-unicode.md)
+    * 10.1 Character Sets and Collations in General
+    * [10.2 Character Sets and Collations in MySQL](preface-and-legal-notices/10-character-sets-collations-unicode/102-character-sets-and-collations-in-mysql.md)
+      * 10.2.1 Character Set Repertoire
+      * 10.2.2 UTF-8 for Metadata
+    * [10.3 Specifying Character Sets and Collations](preface-and-legal-notices/10-character-sets-collations-unicode/103-specifying-character-sets-and-collations.md)
+      * 10.3.1 Collation Naming Conventions
+      * 10.3.2 Server Character Set and Collation
+      * 10.3.3 Database Character Set and Collation
+      * 10.3.4 Table Character Set and Collation
+      * 10.3.5 Column Character Set and Collation
+      * 10.3.6 Character String Literal Character Set and Collation
+      * 10.3.7 The National Character Set
+      * 10.3.8 Character Set Introducers
+      * 10.3.9 Examples of Character Set and Collation Assignment
+      * 10.3.10 Compatibility with Other DBMSs
+    * 10.4 Connection Character Sets and Collations
+    * 10.5 Configuring Application Character Set and Collation
+    * 10.6 Error Message Character Set
+    * 10.7 Column Character Set Conversion
+    * [10.8 Collation Issues](preface-and-legal-notices/10-character-sets-collations-unicode/108-collation-issues.md)
+      * 10.8.1 Using COLLATE in SQL Statements
+      * 10.8.2 COLLATE Clause Precedence
+      * 10.8.3 Character Set and Collation Compatibility
+      * 10.8.4 Collation Coercibility in Expressions
+      * 10.8.5 The binary Collation Compared to \_bin Collations
+      * 10.8.6 Examples of the Effect of Collation
+      * 10.8.7 Using Collation in INFORMATION\_SCHEMA Searches
+    * [10.9 Unicode Support](preface-and-legal-notices/10-character-sets-collations-unicode/109-unicode-support.md)
+      * 10.9.1 The utf8mb4 Character Set \(4-Byte UTF-8 Unicode Encoding\)
+      * 10.9.2 The utf8mb3 Character Set \(3-Byte UTF-8 Unicode Encoding\)
+      * 10.9.3 The utf8 Character Set \(Alias for utf8mb3\)
+      * 10.9.4 The ucs2 Character Set \(UCS-2 Unicode Encoding\)
+      * 10.9.5 The utf16 Character Set \(UTF-16 Unicode Encoding\)
+      * 10.9.6 The utf16le Character Set \(UTF-16LE Unicode Encoding\)
+      * 10.9.7 The utf32 Character Set \(UTF-32 Unicode Encoding\)
+      * 10.9.8 Converting Between 3-Byte and 4-Byte Unicode Character Sets
+    * [10.10 Supported Character Sets and Collations](preface-and-legal-notices/10-character-sets-collations-unicode/1010-supported-character-sets-and-collations.md)
+      * 10.10.1 Unicode Character Sets
+      * 10.10.2 West European Character Sets
+      * 10.10.3 Central European Character Sets
+      * 10.10.4 South European and Middle East Character Sets
+      * 10.10.5 Baltic Character Sets
+      * 10.10.6 Cyrillic Character Sets
+      * 10.10.7 Asian Character Sets
+      * 10.10.8 The Binary Character Set
+    * 10.11 Setting the Error Message Language
+    * [10.12 Adding a Character Set](preface-and-legal-notices/10-character-sets-collations-unicode/1012-adding-a-character-set.md)
+      * 10.12.1 Character Definition Arrays
+      * 10.12.2 String Collating Support for Complex Character Sets
+      * 10.12.3 Multi-Byte Character Support for Complex Character Sets
+    * [10.13 Adding a Collation to a Character Set](preface-and-legal-notices/10-character-sets-collations-unicode/1013-adding-a-collation-to-a-character-set.md)
+      * 10.13.1 Collation Implementation Types
+      * 10.13.2 Choosing a Collation ID
+      * 10.13.3 Adding a Simple Collation to an 8-Bit Character Set
+      * 10.13.4 Adding a UCA Collation to a Unicode Character Set
+    * 10.14 Character Set Configuration
+    * 10.15 MySQL Server Locale Support
+  * [11 Data Types](preface-and-legal-notices/11-data-types.md)
+    * [11.1 Data Type Overview](preface-and-legal-notices/11-data-types/111-data-type-overview.md)
+      * 11.1.1 Numeric Type Overview
+      * 11.1.2 Date and Time Type Overview
+      * 11.1.3 String Type Overview
+    * [11.2 Numeric Types](preface-and-legal-notices/11-data-types/112-numeric-types.md)
+      * 11.2.1 Integer Types \(Exact Value\) - INTEGER, INT, SMALLINT, TINYINT, MEDIUMINT, BIGINT
+      * 11.2.2 Fixed-Point Types \(Exact Value\) - DECIMAL, NUMERIC
+      * 11.2.3 Floating-Point Types \(Approximate Value\) - FLOAT, DOUBLE
+      * 11.2.4 Bit-Value Type - BIT
+      * 11.2.5 Numeric Type Attributes
+      * 11.2.6 Out-of-Range and Overflow Handling
+    * [11.3 Date and Time Types](preface-and-legal-notices/11-data-types/113-date-and-time-types.md)
+      * 11.3.1 The DATE, DATETIME, and TIMESTAMP Types
+      * 11.3.2 The TIME Type
+      * 11.3.3 The YEAR Type
+      * 11.3.4 YEAR\(2\) Limitations and Migrating to YEAR\(4\)
+      * 11.3.5 Automatic Initialization and Updating for TIMESTAMP and DATETIME
+      * 11.3.6 Fractional Seconds in Time Values
+      * 11.3.7 Conversion Between Date and Time Types
+      * 11.3.8 Two-Digit Years in Dates
+    * [11.4 String Types](preface-and-legal-notices/11-data-types/114-string-types.md)
+      * 11.4.1 The CHAR and VARCHAR Types
+      * 11.4.2 The BINARY and VARBINARY Types
+      * 11.4.3 The BLOB and TEXT Types
+      * 11.4.4 The ENUM Type
+      * 11.4.5 The SET Type
+    * [11.5 Spatial Data Types](preface-and-legal-notices/11-data-types/115-spatial-data-types.md)
+      * 11.5.1 Spatial Data Types
+      * 11.5.2 The OpenGIS Geometry Model
+      * 11.5.3 Supported Spatial Data Formats
+    * 11.6 The JSON Data Type
+    * 11.7 Data Type Default Values
+    * 11.8 Data Type Storage Requirements
+    * 11.9 Choosing the Right Type for a Column
+    * 11.10 Using Data Types from Other Database Engines
   * 12 Functions and Operators
   * 13 SQL Statement Syntax
   * 14 The InnoDB Storage Engine
