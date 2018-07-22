@@ -463,33 +463,642 @@
       * 11.5.1 Spatial Data Types
       * 11.5.2 The OpenGIS Geometry Model
       * 11.5.3 Supported Spatial Data Formats
+      * 11.5.4 Geometry Well-Formedness and Validity
+      * 11.5.5 Creating Spatial Columns
+      * 11.5.6 Populating Spatial Columns
+      * 11.5.7 Fetching Spatial Data
+      * 11.5.8 Optimizing Spatial Analysis
+      * 11.5.9 Creating Spatial Indexes
+      * 11.5.10 Using Spatial Indexes
     * 11.6 The JSON Data Type
     * 11.7 Data Type Default Values
     * 11.8 Data Type Storage Requirements
     * 11.9 Choosing the Right Type for a Column
     * 11.10 Using Data Types from Other Database Engines
-  * 12 Functions and Operators
-  * 13 SQL Statement Syntax
-  * 14 The InnoDB Storage Engine
-  * 15 Alternative Storage Engines
-  * 16 Replication
-  * 17 Group Replication
-  * 18 MySQL Shell User Guide
-  * 19 Using MySQL as a Document Store
-  * 20 InnoDB Cluster
+  * [12 Functions and Operators](preface-and-legal-notices/12-functions-and-operators.md)
+    * 12.1 Function and Operator Reference
+    * 12.2 Type Conversion in Expression Evaluation
+    * [12.3 Operators](preface-and-legal-notices/12-functions-and-operators/123-operators.md)
+      * 12.3.1 Operator Precedence
+      * 12.3.2 Comparison Functions and Operators
+      * 12.3.3 Logical Operators
+      * 12.3.4 Assignment Operators
+    * 12.4 Control Flow Functions
+    * [12.5 String Functions](preface-and-legal-notices/12-functions-and-operators/125-string-functions.md)
+      * 12.5.1 String Comparison Functions
+      * 12.5.2 Regular Expressions
+      * 12.5.3 Character Set and Collation of Function Results
+    * [12.6 Numeric Functions and Operators](preface-and-legal-notices/12-functions-and-operators/126-numeric-functions-and-operators.md)
+      * 12.6.1 Arithmetic Operators
+      * 12.6.2 Mathematical Functions
+    * 12.7 Date and Time Functions
+    * 12.8 What Calendar Is Used By MySQL?
+    * [12.9 Full-Text Search Functions](preface-and-legal-notices/12-functions-and-operators/129-full-text-search-functions.md)
+      * 12.9.1 Natural Language Full-Text Searches
+      * 12.9.2 Boolean Full-Text Searches
+      * 12.9.3 Full-Text Searches with Query Expansion
+      * 12.9.4 Full-Text Stopwords
+      * 12.9.5 Full-Text Restrictions
+      * 12.9.6 Fine-Tuning MySQL Full-Text Search
+      * 12.9.7 Adding a Collation for Full-Text Indexing
+      * 12.9.8 ngram Full-Text Parser
+      * 12.9.9 MeCab Full-Text Parser Plugin
+    * 12.10 Cast Functions and Operators
+    * 12.11 XML Functions
+    * 12.12 Bit Functions and Operators
+    * 12.13 Encryption and Compression Functions
+    * 12.14 Information Functions
+    * [12.15 Spatial Analysis Functions](preface-and-legal-notices/12-functions-and-operators/1215-spatial-analysis-functions.md)
+      * 12.15.1 Spatial Function Reference
+      * 12.15.2 Argument Handling by Spatial Functions
+      * 12.15.3 Functions That Create Geometry Values from WKT Values
+      * 12.15.4 Functions That Create Geometry Values from WKB Values
+      * 12.15.5 MySQL-Specific Functions That Create Geometry Values
+      * 12.15.6 Geometry Format Conversion Functions
+      * 12.15.7 Geometry Property Functions
+      * 12.15.8 Spatial Operator Functions
+      * 12.15.9 Functions That Test Spatial Relations Between Geometry Objects
+      * 12.15.10 Spatial Geohash Functions
+      * 12.15.11 Spatial GeoJSON Functions
+      * 12.15.12 Spatial Convenience Functions
+    * [12.16 JSON Functions](preface-and-legal-notices/12-functions-and-operators/1216-json-functions.md)
+      * 12.16.1 JSON Function Reference
+      * 12.16.3 Functions That Search JSON Values
+      * 12.16.4 Functions That Modify JSON Values
+      * 12.16.5 Functions That Return JSON Value Attributes
+      * 12.16.6 JSON Utility Functions
+      * 12.16.7 JSON Path Syntax
+    * 12.17 Functions Used with Global Transaction IDs
+    * [12.18 MySQL Enterprise Encryption Functions](preface-and-legal-notices/12-functions-and-operators/1218-mysql-enterprise-encryption-functions.md)
+      * 12.18.1 Enterprise Encryption Installation
+      * 12.18.2 Enterprise Encryption Usage and Examples
+      * 12.18.3 Enterprise Encryption Function Reference
+      * 12.18.4 Enterprise Encryption Function Descriptions
+    * [12.19 Aggregate \(GROUP BY\) Functions](preface-and-legal-notices/12-functions-and-operators/1219-aggregate-group-by-functions.md)
+      * 12.19.1 Aggregate \(GROUP BY\) Function Descriptions
+      * 12.19.2 GROUP BY Modifiers
+      * 12.19.3 MySQL Handling of GROUP BY
+      * 12.19.4 Detection of Functional Dependence
+    * 12.20 Miscellaneous Functions
+    * [12.21 Precision Math](preface-and-legal-notices/12-functions-and-operators/1221-precision-math.md)
+      * 12.21.1 Types of Numeric Values
+      * 12.21.2 DECIMAL Data Type Characteristics
+      * 12.21.3 Expression Handling
+      * 12.21.4 Rounding Behavior
+      * 12.21.5 Precision Math Examples
+  * [13 SQL Statement Syntax](preface-and-legal-notices/13-sql-statement-syntax.md)
+    * [13.1 Data Definition Statements](preface-and-legal-notices/13-sql-statement-syntax/131-data-definition-statements.md)
+      * 13.1.1 ALTER DATABASE Syntax
+      * 13.1.2 ALTER EVENT Syntax
+      * 13.1.3 ALTER FUNCTION Syntax
+      * 13.1.4 ALTER INSTANCE Syntax
+      * 13.1.5 ALTER LOGFILE GROUP Syntax
+      * 13.1.6 ALTER PROCEDURE Syntax
+      * 13.1.7 ALTER SERVER Syntax
+      * 13.1.8 ALTER TABLE Syntax
+      * 13.1.9 ALTER TABLESPACE Syntax
+      * 13.1.10 ALTER VIEW Syntax
+      * 13.1.11 CREATE DATABASE Syntax
+      * 13.1.12 CREATE EVENT Syntax
+      * 13.1.13 CREATE FUNCTION Syntax
+      * 13.1.14 CREATE INDEX Syntax
+      * 13.1.15 CREATE LOGFILE GROUP Syntax
+      * 13.1.16 CREATE PROCEDURE and CREATE FUNCTION Syntax
+      * 13.1.17 CREATE SERVER Syntax
+      * 13.1.18 CREATE TABLE Syntax
+      * 13.1.19 CREATE TABLESPACE Syntax
+      * 13.1.20 CREATE TRIGGER Syntax
+      * 13.1.21 CREATE VIEW Syntax
+      * 13.1.22 DROP DATABASE Syntax
+      * 13.1.23 DROP EVENT Syntax
+      * 13.1.24 DROP FUNCTION Syntax
+      * 13.1.25 DROP INDEX Syntax
+      * 13.1.26 DROP LOGFILE GROUP Syntax
+      * 13.1.27 DROP PROCEDURE and DROP FUNCTION Syntax
+      * 13.1.28 DROP SERVER Syntax
+      * 13.1.29 DROP TABLE Syntax
+      * 13.1.30 DROP TABLESPACE Syntax
+      * 13.1.31 DROP TRIGGER Syntax
+      * 13.1.32 DROP VIEW Syntax
+      * 13.1.33 RENAME TABLE Syntax
+      * 13.1.34 TRUNCATE TABLE Syntax
+    * [13.2 Data Manipulation Statements](preface-and-legal-notices/13-sql-statement-syntax/132-data-manipulation-statements.md)
+      * 13.2.1 CALL Syntax
+      * 13.2.2 DELETE Syntax
+      * 13.2.3 DO Syntax
+      * 13.2.4 HANDLER Synta
+      * 13.2.5 INSERT Syntax
+      * 13.2.6 LOAD DATA INFILE Syntax
+      * 13.2.7 LOAD XML Syntax
+      * 13.2.8 REPLACE Syntax
+      * 13.2.9 SELECT Syntax
+      * 13.2.10 Subquery Syntax
+      * 13.2.11 UPDATE Syntax
+    * [13.3 Transactional and Locking Statements](preface-and-legal-notices/13-sql-statement-syntax/133-transactional-and-locking-statements.md)
+      * 13.3.1 START TRANSACTION, COMMIT, and ROLLBACK Syntax
+      * 13.3.2 Statements That Cannot Be Rolled Back
+      * 13.3.3 Statements That Cause an Implicit Commit
+      * 13.3.4 SAVEPOINT, ROLLBACK TO SAVEPOINT, and RELEASE SAVEPOINT Syntax
+      * 13.3.5 LOCK TABLES and UNLOCK TABLES Syntax
+      * 13.3.6 SET TRANSACTION Syntax
+      * 13.3.7 XA Transactions
+    * [13.4 Replication Statements](preface-and-legal-notices/13-sql-statement-syntax/134-replication-statements.md)
+      * 13.4.1 SQL Statements for Controlling Master Servers
+      * 13.4.2 SQL Statements for Controlling Slave Servers
+      * 13.4.3 SQL Statements for Controlling Group Replication
+    * [13.5 Prepared SQL Statement Syntax](preface-and-legal-notices/13-sql-statement-syntax/135-prepared-sql-statement-syntax.md)
+      * 13.5.1 PREPARE Syntax
+      * 13.5.2 EXECUTE Syntax
+      * 13.5.3 DEALLOCATE PREPARE Syntax
+    * [13.6 Compound-Statement Syntax](preface-and-legal-notices/13-sql-statement-syntax/136-compound-statement-syntax.md)
+      * 13.6.1 BEGIN ... END Compound-Statement Syntax
+      * 13.6.2 Statement Label Syntax
+      * 13.6.3 DECLARE Syntax
+      * 13.6.4 Variables in Stored Programs
+      * 13.6.5 Flow Control Statements
+      * 13.6.6 Cursors
+      * 13.6.7 Condition Handling
+    * [13.7 Database Administration Statements](preface-and-legal-notices/13-sql-statement-syntax/137-database-administration-statements.md)
+      * 13.7.1 Account Management Statements
+      * 13.7.2 Table Maintenance Statements
+      * 13.7.3 Plugin and User-Defined Function Statements
+      * 13.7.4 SET Syntax
+      * 13.7.5 SHOW Syntax
+      * 13.7.6 Other Administrative Statements
+    * [13.8 Utility Statements](preface-and-legal-notices/13-sql-statement-syntax/138-utility-statements.md)
+      * 13.8.1 DESCRIBE Syntax
+      * 13.8.2 EXPLAIN Syntax
+      * 13.8.3 HELP Syntax
+      * 13.8.4 USE Syntax
+  * [14 The InnoDB Storage Engine](preface-and-legal-notices/14-the-innodb-storage-engine.md)
+    * [14.1 Introduction to InnoDB](preface-and-legal-notices/14-the-innodb-storage-engine/141-introduction-to-innodb.md)
+      * 14.1.1 Benefits of Using InnoDB Tables
+      * 14.1.2 Best Practices for InnoDB Tables
+      * 14.1.3 Verifying that InnoDB is the Default Storage Engine
+      * 14.1.4 Testing and Benchmarking with InnoDB
+      * 14.1.5 Turning Off InnoDB
+    * 14.2 InnoDB and the ACID Model
+    * 14.3 InnoDB Multi-Versioning
+    * [14.4 InnoDB Architecture](preface-and-legal-notices/14-the-innodb-storage-engine/144-innodb-architecture.md)
+      * 14.4.1 Buffer Pool
+      * 14.4.2 Change Buffer
+      * 14.4.3 Adaptive Hash Index
+      * 14.4.4 Redo Log Buffer
+      * 14.4.5 System Tablespace
+      * 14.4.6 InnoDB Data Dictionary
+      * 14.4.7 Doublewrite Buffer
+      * 14.4.8 Undo Logs
+      * 14.4.9 File-Per-Table Tablespaces
+      * 14.4.10 General Tablespaces
+      * 14.4.11 Undo Tablespace
+      * 14.4.12 Temporary Tablespace
+      * 14.4.13 Redo Log
+    * [14.5 InnoDB Locking and Transaction Model](preface-and-legal-notices/14-the-innodb-storage-engine/145-innodb-locking-and-transaction-model.md)
+      * 14.5.1 InnoDB Locking
+      * 14.5.2 InnoDB Transaction Model
+      * 14.5.3 Locks Set by Different SQL Statements in InnoDB
+      * 14.5.4 Phantom Rows
+      * 14.5.5 Deadlocks in InnoDB
+    * [14.6 InnoDB Configuration](preface-and-legal-notices/14-the-innodb-storage-engine/146-innodb-configuration.md)
+      * 14.6.1 InnoDB Startup Configuration
+      * 14.6.2 Configuring InnoDB for Read-Only Operation
+      * 14.6.3 InnoDB Buffer Pool Configuration
+      * 14.6.4 Configuring the Memory Allocator for InnoDB
+      * 14.6.5 Configuring InnoDB Change Buffering
+      * 14.6.6 Configuring Thread Concurrency for InnoDB
+      * 14.6.7 Configuring the Number of Background InnoDB I/O Threads
+      * 14.6.8 Using Asynchronous I/O on Linux
+      * 14.6.9 Configuring the InnoDB Master Thread I/O Rate
+      * 14.6.10 Configuring Spin Lock Polling
+      * 14.6.11 Configuring InnoDB Purge Scheduling
+      * 14.6.12 Configuring Optimizer Statistics for InnoDB
+      * 14.6.13 Configuring the Merge Threshold for Index Pages
+    * [14.7 InnoDB Tablespaces](preface-and-legal-notices/14-the-innodb-storage-engine/147-innodb-tablespaces.md)
+      * 14.7.1 Resizing the InnoDB System Tablespace
+      * 14.7.2 Changing the Number or Size of InnoDB Redo Log Files
+      * 14.7.3 Using Raw Disk Partitions for the System Tablespace
+      * 14.7.4 InnoDB File-Per-Table Tablespaces
+      * 14.7.5 Creating File-Per-Table Tablespaces Outside the Data Directory
+      * 14.7.6 Copying File-Per-Table Tablespaces to Another Instance
+      * 14.7.7 Configuring Undo Tablespaces
+      * 14.7.8 Truncating Undo Tablespaces
+      * 14.7.9 InnoDB General Tablespaces
+      * 14.7.10 InnoDB Tablespace Encryption
+    * [14.8 InnoDB Tables and Indexes](preface-and-legal-notices/14-the-innodb-storage-engine/148-innodb-tables-and-indexes.md)
+      * 14.8.1 InnoDB Tables
+      * 14.8.2 InnoDB Indexes
+    * [14.9 InnoDB Table and Page Compression](preface-and-legal-notices/14-the-innodb-storage-engine/149-innodb-table-and-page-compression.md)
+      * 14.9.1 InnoDB Table Compression
+      * 14.9.2 InnoDB Page Compression
+    * [14.10 InnoDB File-Format Management](preface-and-legal-notices/14-the-innodb-storage-engine/1410-innodb-file-format-management.md)
+      * 14.10.1 Enabling File Formats
+      * 14.10.2 Verifying File Format Compatibility
+      * 14.10.3 Identifying the File Format in Use
+      * 14.10.4 Modifying the File Format
+    * [14.11 InnoDB Row Storage and Row Formats](preface-and-legal-notices/14-the-innodb-storage-engine/1411-innodb-row-storage-and-row-formats.md)
+      * 14.11.1 Overview of InnoDB Row Storage
+      * 14.11.2 Specifying the Row Format for a Table
+      * 14.11.3 DYNAMIC and COMPRESSED Row Formats
+      * 14.11.4 COMPACT and REDUNDANT Row Formats
+    * [14.12 InnoDB Disk I/O and File Space Management](preface-and-legal-notices/14-the-innodb-storage-engine/1412-innodb-disk-io-and-file-space-management.md)
+      * 14.12.1 InnoDB Disk I/O
+      * 14.12.2 File Space Management
+      * 14.12.3 InnoDB Checkpoints
+      * 14.12.4 Defragmenting a Table
+      * 14.12.5 Reclaiming Disk Space with TRUNCATE TABLE
+    * [14.13 InnoDB and Online DDL](preface-and-legal-notices/14-the-innodb-storage-engine/1413-innodb-and-online-ddl.md)
+      * 14.13.1 Online DDL Operations
+      * 14.13.2 Online DDL Performance and Concurrency
+      * 14.13.3 Online DDL Space Requirements
+      * 14.13.4 Simplifying DDL Statements with Online DDL
+      * 14.13.5 Online DDL Failure Conditions
+      * 14.13.6 Online DDL Limitations
+    * 14.14 InnoDB Startup Options and System Variables
+    * [14.15 InnoDB INFORMATION\_SCHEMA Tables](preface-and-legal-notices/14-the-innodb-storage-engine/1415-innodb-informationschema-tables.md)
+      * 14.15.1 InnoDB INFORMATION\_SCHEMA Tables about Compression
+      * 14.15.2 InnoDB INFORMATION\_SCHEMA Transaction and Locking Information
+      * 14.15.3 InnoDB INFORMATION\_SCHEMA System Tables
+      * 14.15.4 InnoDB INFORMATION\_SCHEMA FULLTEXT Index Tables
+      * 14.15.5 InnoDB INFORMATION\_SCHEMA Buffer Pool Tables
+      * 14.15.6 InnoDB INFORMATION\_SCHEMA Metrics Table
+      * 14.15.7 InnoDB INFORMATION\_SCHEMA Temporary Table Info Table
+      * 14.15.8 Retrieving InnoDB Tablespace Metadata from INFORMATION\_SCHEMA.FILES
+    * [14.16 InnoDB Integration with MySQL Performance Schema](preface-and-legal-notices/14-the-innodb-storage-engine/1416-innodb-integration-with-mysql-performance-schema.md)
+      * 14.16.1 Monitoring ALTER TABLE Progress for InnoDB Tables Using Performance Schema
+      * 14.16.2 Monitoring InnoDB Mutex Waits Using Performance Schema
+    * [14.17 InnoDB Monitors](preface-and-legal-notices/14-the-innodb-storage-engine/1417-innodb-monitors.md)
+      * 14.17.1 InnoDB Monitor Types
+      * 14.17.2 Enabling InnoDB Monitors
+      * 14.17.3 InnoDB Standard Monitor and Lock Monitor Output
+    * [14.18 InnoDB Backup and Recovery](preface-and-legal-notices/14-the-innodb-storage-engine/1418-innodb-backup-and-recovery.md)
+      * 14.18.1 InnoDB Backup
+      * 14.18.2 InnoDB Recover
+    * 14.19 InnoDB and MySQL Replication
+    * [14.20 InnoDB memcached Plugin](preface-and-legal-notices/14-the-innodb-storage-engine/1420-innodb-memcached-plugin.md)
+      * 14.20.1 Benefits of the InnoDB memcached Plugin
+      * 14.20.2 InnoDB memcached Architecture
+      * 14.20.3 Setting Up the InnoDB memcached Plugin
+      * 14.20.4 Security Considerations for the InnoDB memcached Plugin
+      * 14.20.5 Writing Applications for the InnoDB memcached Plugin
+      * 14.20.6 The InnoDB memcached Plugin and Replication
+      * 14.20.7 InnoDB memcached Plugin Internals
+      * 14.20.8 Troubleshooting the InnoDB memcached Plugin
+    * [14.21 InnoDB Troubleshooting](preface-and-legal-notices/14-the-innodb-storage-engine/1421-innodb-troubleshooting.md)
+      * 14.21.1 Troubleshooting InnoDB I/O Problems
+      * 14.21.2 Forcing InnoDB Recovery
+      * 14.21.3 Troubleshooting InnoDB Data Dictionary Operations
+      * 14.21.4 InnoDB Error Handling
+  * [15 Alternative Storage Engines](preface-and-legal-notices/15-alternative-storage-engines.md)
+    * [15.1 Setting the Storage Engine](preface-and-legal-notices/15-alternative-storage-engines/151-setting-the-storage-engine.md)
+    * [15.2 The MyISAM Storage Engine](preface-and-legal-notices/15-alternative-storage-engines/152-the-myisam-storage-engine.md)
+      * 15.2.1 MyISAM Startup Options
+      * 15.2.2 Space Needed for Keys
+      * 15.2.3 MyISAM Table Storage Formats
+      * 15.2.4 MyISAM Table Problems
+    * 15.3 The MEMORY Storage Engine
+    * [15.4 The CSV Storage Engine](preface-and-legal-notices/15-alternative-storage-engines/154-the-csv-storage-engine.md)
+      * 15.4.1 Repairing and Checking CSV Tables
+      * 15.4.2 CSV Limitations
+    * 15.5 The ARCHIVE Storage Engine
+    * 15.6 The BLACKHOLE Storage Engine
+    * [15.7 The MERGE Storage Engine](preface-and-legal-notices/15-alternative-storage-engines/157-the-merge-storage-engine.md)
+      * 15.7.1 MERGE Table Advantages and Disadvantages
+      * 15.7.2 MERGE Table Problems
+    * [15.8 The FEDERATED Storage Engine](preface-and-legal-notices/15-alternative-storage-engines/158-the-federated-storage-engine.md)
+      * 15.8.1 FEDERATED Storage Engine Overview
+      * 15.8.2 How to Create FEDERATED Tables
+      * 15.8.3 FEDERATED Storage Engine Notes and Tips
+      * 15.8.4 FEDERATED Storage Engine Resources
+    * 15.9 The EXAMPLE Storage Engine
+    * 15.10 Other Storage Engines
+    * [15.11 Overview of MySQL Storage Engine Architecture](preface-and-legal-notices/15-alternative-storage-engines/1511-overview-of-mysql-storage-engine-architecture.md)
+      * 15.11.1 Pluggable Storage Engine Architecture
+      * 15.11.2 The Common Database Server Layer
+  * [16 Replication](preface-and-legal-notices/16-replication.md)
+    * [16.1 Configuring Replication](preface-and-legal-notices/16-replication/161-configuring-replication.md)
+      * 16.1.1 Binary Log File Position Based Replication Configuration Overview
+      * 16.1.2 Setting Up Binary Log File Position Based Replication
+      * 16.1.3 Replication with Global Transaction Identifiers
+      * 16.1.4 MySQL Multi-Source Replication
+      * 16.1.5 Changing Replication Modes on Online Servers
+      * 16.1.6 Replication and Binary Logging Options and Variables
+      * 16.1.7 Common Replication Administration Tasks
+    * [16.2 Replication Implementation](preface-and-legal-notices/16-replication/162-replication-implementation.md)
+      * 16.2.1 Replication Formats
+      * 16.2.2 Replication Implementation Details
+      * 16.2.3 Replication Channels
+      * 16.2.4 Replication Relay and Status Logs
+      * 16.2.5 How Servers Evaluate Replication Filtering Rules
+    * [16.3 Replication Solutions](preface-and-legal-notices/16-replication/163-replication-solutions.md)
+      * 16.3.1 Using Replication for Backups
+      * 16.3.2 Handling an Unexpected Halt of a Replication Slave
+      * 16.3.3 Using Replication with Different Master and Slave Storage Engines
+      * 16.3.4 Using Replication for Scale-Out
+      * 16.3.5 Replicating Different Databases to Different Slaves
+      * 16.3.6 Improving Replication Performance
+      * 16.3.7 Switching Masters During Failover
+      * 16.3.8 Setting Up Replication to Use Encrypted Connections
+      * 16.3.9 Semisynchronous Replication
+      * 16.3.10 Delayed Replication
+    * [16.4 Replication Notes and Tips](preface-and-legal-notices/16-replication/164-replication-notes-and-tips.md)
+      * 16.4.1 Replication Features and Issues
+      * 16.4.2 Replication Compatibility Between MySQL Versions
+      * 16.4.3 Upgrading a Replication Setup
+      * 16.4.4 Troubleshooting Replication
+      * 16.4.5 How to Report Replication Bugs or Problems
+  * [17 Group Replication](preface-and-legal-notices/17-group-replication.md)
+    * [17.1 Group Replication Background](preface-and-legal-notices/17-group-replication/171-group-replication-background.md)
+      * 17.1.1 Replication Technologies
+      * 17.1.2 Group Replication Use Cases
+      * 17.1.3 Group Replication Details
+    * [17.2 Getting Started](preface-and-legal-notices/17-group-replication/172-getting-started.md)
+      * 17.2.1 Deploying Group Replication in Single-Primary Mode
+    * [17.3 Monitoring Group Replication](preface-and-legal-notices/17-group-replication/173-monitoring-group-replication.md)
+      * 17.3.1 Replication\_group\_member\_stats
+      * 17.3.2 Replication\_group\_members
+      * 17.3.3 Replication\_connection\_status
+      * 17.3.4 Replication\_applier\_status
+      * 17.3.5 Group Replication Server States
+    * [17.4 Group Replication Operations](preface-and-legal-notices/17-group-replication/174-group-replication-operations.md)
+      * 17.4.1 Deploying in Multi-Primary or Single-Primary Mode
+      * 17.4.2 Tuning Recovery
+      * 17.4.3 Network Partitioning
+      * 17.4.4 Using MySQL Enterprise Backup with Group Replication
+    * [17.5 Group Replication Security](preface-and-legal-notices/17-group-replication/175-group-replication-security.md)
+      * 17.5.1 IP Address Whitelisting
+      * 17.5.2 Secure Socket Layer Support \(SSL\)
+      * 17.5.3 Virtual Private Networks \(VPN\)
+    * 17.6 Group Replication System Variables
+    * [17.7 Requirements and Limitations](preface-and-legal-notices/17-group-replication/177-requirements-and-limitations.md)
+      * 17.7.1 Group Replication Requirements
+      * 17.7.2 Group Replication Limitations
+    * 17.8 Frequently Asked Questions
+    * [17.9 Group Replication Technical Details](preface-and-legal-notices/17-group-replication/179-group-replication-technical-details.md)
+      * 17.9.1 Group Replication Plugin Architecture
+      * 17.9.2 The Group
+      * 17.9.3 Data Manipulation Statements
+      * 17.9.4 Data Definition Statements
+      * 17.9.5 Distributed Recovery
+      * 17.9.6 Observability
+      * 17.9.7 Group Replication Performance
+  * [18 MySQL Shell User Guide](preface-and-legal-notices/18-mysql-shell-user-guide.md)
+    * 18.1 MySQL Shell Features
+    * [18.2 Getting Started with MySQL Shell](preface-and-legal-notices/18-mysql-shell-user-guide/182-getting-started-with-mysql-shell.md)
+      * 18.2.1 MySQL Shell Connections
+      * 18.2.2 MySQL Shell Sessions
+      * 18.2.3 MySQL Shell Global Variables
+    * [18.3 MySQL Shell Code Execution](preface-and-legal-notices/18-mysql-shell-user-guide/183-mysql-shell-code-execution.md)
+      * 18.3.1 Interactive Code Execution
+      * 18.3.2 Batch Code Execution
+      * 18.3.3 Output Formats
+      * 18.3.4 Active Language
+      * 18.3.5 Batch Mode Made Interactive
+    * [18.4 Configuring MySQL Shell](preface-and-legal-notices/18-mysql-shell-user-guide/184-configuring-mysql-shell.md)
+      * 18.4.1 MySQL Shell Commands
+    * 18.5 MySQL Shell Application Log
+    * [18.6 Customizing MySQL Shell](preface-and-legal-notices/18-mysql-shell-user-guide/186-customizing-mysql-shell.md)
+      * 18.6.1 Working With Start-Up Scripts
+      * 18.6.2 Adding Module Search Paths
+      * 18.6.3 Overriding the Default Prompt
+  * [19 Using MySQL as a Document Store](preface-and-legal-notices/19-using-mysql-as-a-document-store.md)
+    * 19.1 Preproduction Status — Legal Notice
+    * 19.2 Key Concepts
+    * [19.3 Setting Up MySQL as a Document Store](preface-and-legal-notices/19-using-mysql-as-a-document-store/193-setting-up-mysql-as-a-document-store.md)
+      * 19.3.1 Installing MySQL Shell
+      * 19.3.2 Starting MySQL Shell
+    * [19.4 Quick-Start Guide: MySQL Shell for JavaScript](preface-and-legal-notices/19-using-mysql-as-a-document-store/194-quick-start-guide-mysql-shell-for-javascript.md)
+      * 19.4.1 Introduction
+      * 19.4.2 Import Database Sample
+      * 19.4.3 MySQL Shell
+      * 19.4.4 Documents and Collections
+      * 19.4.5 Relational Tables
+      * 19.4.6 Documents in Tables
+    * [19.5 Quick-Start Guide: MySQL Shell for Python](preface-and-legal-notices/19-using-mysql-as-a-document-store/195-quick-start-guide-mysql-shell-for-python.md)
+      * 19.5.1 Introduction
+      * 19.5.2 Import Database Sample
+      * 19.5.3 MySQL Shell
+      * 19.5.4 Documents and Collections
+      * 19.5.5 Relational Tables
+      * 19.5.6 Documents in Tables
+    * 19.6 Quick-Start Guide: MySQL for Visual Studio
+    * [19.7 X Plugin](preface-and-legal-notices/19-using-mysql-as-a-document-store/197-x-plugin.md)
+      * 19.7.1 Using Secure Connections with X Plugin
+      * 19.7.2 X Plugin Options and Variables
+      * 19.7.3 Monitoring X Plugin
+  * [20 InnoDB Cluster](preface-and-legal-notices/20-innodb-cluster.md)
+    * 20.1 Introducing InnoDB Cluster
+    * [20.2 Creating an InnoDB Cluster](preface-and-legal-notices/20-innodb-cluster/202-creating-an-innodb-cluster.md)
+      * 20.2.1 Deployment Scenarios
+      * 20.2.2 InnoDB Cluster Requirements
+      * 20.2.3 Methods of Installing
+      * 20.2.4 Sandbox Deployment of InnoDB Cluster
+      * 20.2.5 Production Deployment of InnoDB Cluster
+      * 20.2.6 Adopting a Group Replication Deployment
+    * 20.3 Using MySQL Router with InnoDB Cluster
+    * 20.4 Working with InnoDB Cluster
+    * 20.5 Known Limitations
   * 21 MySQL NDB Cluster 7.5 and NDB Cluster 7.6
-  * 22 Partitioning
+  * [22 Partitioning](preface-and-legal-notices/22-partitioning.md)
+    * 22.1 Overview of Partitioning in MySQL
+    * [22.2 Partitioning Types](preface-and-legal-notices/22-partitioning/222-partitioning-types.md)
+      * 22.2.1 RANGE Partitioning
+      * 22.2.2 LIST Partitioning
+      * 22.2.3 COLUMNS Partitioning
+      * 22.2.4 HASH Partitioning
+      * 22.2.5 KEY Partitioning
+      * 22.2.6 Subpartitioning
+      * 22.2.7 How MySQL Partitioning Handles NULL
+    * [22.3 Partition Management](preface-and-legal-notices/22-partitioning/223-partition-management.md)
+      * 22.3.1 Management of RANGE and LIST Partitions
+      * 22.3.2 Management of HASH and KEY Partitions
+      * 22.3.3 Exchanging Partitions and Subpartitions with Tables
+      * 22.3.4 Maintenance of Partitions
+      * 22.3.5 Obtaining Information About Partitions
+    * 22.4 Partition Pruning
+    * 22.5 Partition Selection
+    * [22.6 Restrictions and Limitations on Partitioning](preface-and-legal-notices/22-partitioning/226-restrictions-and-limitations-on-partitioning.md)
+      * 22.6.1 Partitioning Keys, Primary Keys, and Unique Keys
+      * 22.6.2 Partitioning Limitations Relating to Storage Engines
+      * 22.6.3 Partitioning Limitations Relating to Functions
+      * 22.6.4 Partitioning and Locking
   * 23 Stored Programs and Views
   * 24 INFORMATION\_SCHEMA Tables
-  * 25 MySQL Performance Schema
-  * 26 MySQL sys Schema
-  * 27 Connectors and APIs
-  * 28 Extending MySQL
-  * 29 MySQL Enterprise Edition
+  * [25 MySQL Performance Schema](preface-and-legal-notices/25-mysql-performance-schema.md)
+    * 25.1 Performance Schema Quick Start
+    * 25.2 Performance Schema Build Configuration
+    * 25.3 Performance Schema Startup Configuration
+    * [25.4 Performance Schema Runtime Configuration](preface-and-legal-notices/25-mysql-performance-schema/254-performance-schema-runtime-configuration.md)
+      * 25.4.1 Performance Schema Event Timing
+      * 25.4.2 Performance Schema Event Filtering
+      * 25.4.3 Event Pre-Filtering
+      * 25.4.4 Pre-Filtering by Instrument
+      * 25.4.5 Pre-Filtering by Object
+      * 25.4.6 Pre-Filtering by Thread
+      * 25.4.7 Pre-Filtering by Consumer
+      * 25.4.8 Example Consumer Configurations
+      * 25.4.9 Naming Instruments or Consumers for Filtering Operations
+      * 25.4.10 Determining What Is Instrumented
+    * 25.5 Performance Schema Queries
+    * 25.6 Performance Schema Instrument Naming Conventions
+    * 25.7 Performance Schema Status Monitoring
+    * 25.8 Performance Schema Atom and Molecule Events
+    * 25.9 Performance Schema Statement Digests
+    * 25.10 Performance Schema General Table Characteristics
+    * [25.11 Performance Schema Table Descriptions](preface-and-legal-notices/25-mysql-performance-schema/2511-performance-schema-table-descriptions.md)
+      * 25.11.1 Performance Schema Table Index
+      * 25.11.2 Performance Schema Setup Tables
+      * 25.11.3 Performance Schema Instance Tables
+      * 25.11.4 Performance Schema Wait Event Tables
+      * 25.11.5 Performance Schema Stage Event Tables
+      * 25.11.6 Performance Schema Statement Event Tables
+      * 25.11.7 Performance Schema Transaction Tables
+      * 25.11.8 Performance Schema Connection Tables
+      * 25.11.9 Performance Schema Connection Attribute Tables
+      * 25.11.10 Performance Schema User Variable Tables
+      * 25.11.11 Performance Schema Replication Tables
+      * 25.11.12 Performance Schema Lock Tables
+      * 25.11.13 Performance Schema System Variable Tables
+      * 25.11.14 Performance Schema Status Variable Tables
+      * 25.11.15 Performance Schema Summary Tables
+      * 25.11.16 Performance Schema Miscellaneous Tables
+    * 25.12 Performance Schema Option and Variable Reference
+    * 25.13 Performance Schema Command Options
+    * 25.14 Performance Schema System Variables
+    * 25.15 Performance Schema Status Variables
+    * 25.16 The Performance Schema Memory-Allocation Model
+    * 25.17 Performance Schema and Plugins
+    * [25.18 Using the Performance Schema to Diagnose Problems](preface-and-legal-notices/25-mysql-performance-schema/2518-using-the-performance-schema-to-diagnose-problems.md)
+      * 25.18.1 Query Profiling Using Performance Schema
+    * 25.19 Migrating to Performance Schema System and Status Variable Tables
+  * [26 MySQL sys Schema](preface-and-legal-notices/26-mysql-sys-schema.md)
+    * 26.1 Prerequisites for Using the sys Schema
+    * 26.2 Using the sys Schema
+    * 26.3 sys Schema Progress Reporting
+    * [26.4 sys Schema Object Reference](preface-and-legal-notices/26-mysql-sys-schema/264-sys-schema-object-reference.md)
+      * 26.4.1 sys Schema Object Index
+      * 26.4.2 sys Schema Tables and Triggers
+      * 26.4.3 sys Schema Views
+      * 26.4.4 sys Schema Stored Procedures
+      * 26.4.5 sys Schema Stored Functions
+  * [27 Connectors and APIs](preface-and-legal-notices/27-connectors-and-apis.md)
+    * 27.1 MySQL Connector/C
+    * 27.2 MySQL Connector/C++
+    * 27.3 MySQL Connector/J
+    * 27.4 MySQL Connector/Net
+    * 27.5 MySQL Connector/ODBC
+    * 27.6 MySQL Connector/Python
+    * [27.7 libmysqld, the Embedded MySQL Server Library](preface-and-legal-notices/27-connectors-and-apis/277-libmysqld-the-embedded-mysql-server-library.md)
+      * 27.7.1 Compiling Programs with libmysqld
+      * 27.7.2 Restrictions When Using the Embedded MySQL Server
+      * 27.7.3 Options with the Embedded Server
+      * 27.7.4 Embedded Server Examples
+    * [27.8 MySQL C API](preface-and-legal-notices/27-connectors-and-apis/278-mysql-c-api.md)
+      * 27.8.1 MySQL C API Implementations
+      * 27.8.2 Simultaneous MySQL Server and Connector/C Installations
+      * 27.8.3 Example C API Client Programs
+      * 27.8.4 Building and Running C API Client Programs
+      * 27.8.5 C API Data Structures
+      * 27.8.6 C API Function Overview
+      * 27.8.7 C API Function Descriptions
+      * 27.8.8 C API Prepared Statements
+      * 27.8.9 C API Prepared Statement Data Structures
+      * 27.8.10 C API Prepared Statement Function Overview
+      * 27.8.11 C API Prepared Statement Function Descriptions
+      * 27.8.12 C API Threaded Function Descriptions
+      * 27.8.13 C API Embedded Server Function Descriptions
+      * 27.8.14 C API Client Plugin Functions
+      * 27.8.15 C API Encrypted Connection Support
+      * 27.8.16 C API Multiple Statement Execution Support
+      * 27.8.17 C API Prepared Statement Handling of Date and Time Values
+      * 27.8.18 C API Prepared CALL Statement Support
+      * 27.8.19 C API Prepared Statement Problems
+      * 27.8.20 C API Automatic Reconnection Control
+      * 27.8.21 C API Common Issues
+    * 27.9 MySQL PHP API
+    * 27.10 MySQL Perl API
+    * 27.11 MySQL Python API
+    * [27.12 MySQL Ruby APIs](preface-and-legal-notices/27-connectors-and-apis/2712-mysql-ruby-apis.md)
+      * 27.12.1 The MySQL/Ruby API
+      * 27.12.2 The Ruby/MySQL API
+    * 27.13 MySQL Tcl API
+    * 27.14 MySQL Eiffel Wrapper
+  * [28 Extending MySQL](preface-and-legal-notices/28-extending-mysql.md)
+    * [28.1 MySQL Internals](preface-and-legal-notices/28-extending-mysql/281-mysql-internals.md)
+      * 28.1.1 MySQL Threads
+      * 28.1.2 The MySQL Test Suite
+    * [28.2 The MySQL Plugin API](preface-and-legal-notices/28-extending-mysql/282-the-mysql-plugin-api.md)
+      * 28.2.1 Types of Plugins
+      * 28.2.2 Plugin API Characteristics
+      * 28.2.3 Plugin API Components
+      * 28.2.4 Writing Plugins
+    * [28.3 MySQL Services for Plugins](preface-and-legal-notices/28-extending-mysql/283-mysql-services-for-plugins.md)
+      * 28.3.1 The Locking Service
+      * 28.3.2 The Keyring Service
+    * [28.4 Adding New Functions to MySQL](preface-and-legal-notices/28-extending-mysql/284-adding-new-functions-to-mysql.md)
+      * 28.4.1 Features of the User-Defined Function Interface
+      * 28.4.2 Adding a New User-Defined Function
+      * 28.4.3 Adding a New Native Function
+    * [28.5 Debugging and Porting MySQL](preface-and-legal-notices/28-extending-mysql/285-debugging-and-porting-mysql.md)
+      * 28.5.1 Debugging a MySQL Serve
+      * 28.5.2 Debugging a MySQL Client
+      * 28.5.3 The DBUG Package
+  * [29 MySQL Enterprise Edition](preface-and-legal-notices/29-mysql-enterprise-edition.md)
+    * 29.1 MySQL Enterprise Monitor Overview
+    * 29.2 MySQL Enterprise Backup Overview
+    * 29.3 MySQL Enterprise Security Overview
+    * 29.4 MySQL Enterprise Encryption Overview
+    * 29.5 MySQL Enterprise Audit Overview
+    * 29.6 MySQL Enterprise Firewall Overview
+    * 29.7 MySQL Enterprise Thread Pool Overview
   * 30 MySQL Workbench
-  * A MySQL 5.7 Frequently Asked Questions
-  * B Errors, Error Codes, and Common Problems
-  * C Restrictions and Limits
+  * [A MySQL 5.7 Frequently Asked Questions](preface-and-legal-notices/a-mysql-57-frequently-asked-questions.md)
+    * A.1 MySQL 5.7 FAQ: General
+    * A.2 MySQL 5.7 FAQ: Storage Engines
+    * A.3 MySQL 5.7 FAQ: Server SQL Mode
+    * A.4 MySQL 5.7 FAQ: Stored Procedures and Functions
+    * A.5 MySQL 5.7 FAQ: Triggers
+    * A.6 MySQL 5.7 FAQ: Views
+    * A.7 MySQL 5.7 FAQ: INFORMATION\_SCHEMA
+    * A.8 MySQL 5.7 FAQ: Migration
+    * A.9 MySQL 5.7 FAQ: Security
+    * A.10 MySQL 5.7 FAQ: NDB Cluster
+    * A.11 MySQL 5.7 FAQ: MySQL Chinese, Japanese, and Korean Character Sets
+    * A.12 MySQL 5.7 FAQ: Connectors & APIs
+    * A.13 MySQL 5.7 FAQ: Replication
+    * A.14 MySQL 5.7 FAQ: MySQL Enterprise Thread Pool
+    * A.15 MySQL 5.7 FAQ: InnoDB Change Buffer
+    * A.16 MySQL 5.7 FAQ: InnoDB Tablespace Encryption
+    * A.17 MySQL 5.7 FAQ: Virtualization Support
+  * [B Errors, Error Codes, and Common Problems](preface-and-legal-notices/b-errors-error-codes-and-common-problems.md)
+    * B.1 Sources of Error Information
+    * B.2 Types of Error Values
+    * B.3 Server Error Codes and Messages
+    * B.4 Client Error Codes and Messages
+    * [B.5 Problems and Common Errors](preface-and-legal-notices/b-errors-error-codes-and-common-problems/b5-problems-and-common-errors.md)
+      * B.5.1 How to Determine What Is Causing a Problem
+      * B.5.2 Common Errors When Using MySQL Programs
+      * B.5.3 Administration-Related Issues
+      * B.5.4 Query-Related Issues
+      * B.5.5 Optimizer-Related Issues
+      * B.5.6 Table Definition-Related Issues
+      * B.5.7 Known Issues in MySQL
+  * [C Restrictions and Limits](preface-and-legal-notices/c-restrictions-and-limits.md)
+    * C.1 Restrictions on Stored Programs
+    * C.2 Restrictions on Condition Handling
+    * C.3 Restrictions on Server-Side Cursors
+    * C.4 Restrictions on Subqueries
+    * C.5 Restrictions on Views
+    * C.6 Restrictions on XA Transactions
+    * C.7 Restrictions on Character Sets
+    * C.8 Restrictions on Performance Schema
+    * C.9 Restrictions on Pluggable Authentication
+    * [C.10 Limits in MySQL](preface-and-legal-notices/c-restrictions-and-limits/c10-limits-in-mysql.md)
+      * C.10.1 Limits on Joins
+      * C.10.2 Limits on Number of Databases and Tables
+      * C.10.3 Limits on Table Size
+      * C.10.4 Limits on Table Column Count and Row Size
+      * C.10.5 Limits Imposed by .frm File Structure
+      * C.10.6 Windows Platform Limitations
   * D Indexes
   * MySQL Glossary
 
