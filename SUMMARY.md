@@ -109,9 +109,109 @@
       * 3.6.8 Calculating Visits Per Day
       * 3.6.9 Using AUTO\_INCREMENT
     * 3.7 Using MySQL with Apache
-  * 4 MySQL Programs
-  * 5 MySQL Server Administration
-  * 6 Security
+  * [4 MySQL Programs](preface-and-legal-notices/4-mysql-programs.md)
+    * 4.1 Overview of MySQL Programs
+    * [4.2 Using MySQL Programs](preface-and-legal-notices/4-mysql-programs/42-using-mysql-programs.md)
+      * 4.2.1 Invoking MySQL Programs
+      * 4.2.2 Connecting to the MySQL Server
+      * 4.2.3 Specifying Program Options
+      * 4.2.4 Using Options on the Command Line
+      * 4.2.5 Program Option Modifiers
+      * 4.2.6 Using Option Files
+      * 4.2.7 Command-Line Options that Affect Option-File Handling
+      * 4.2.8 Using Options to Set Program Variables
+      * 4.2.9 Option Defaults, Options Expecting Values, and the = Sign
+      * 4.2.10 Setting Environment Variables
+    * [4.3 MySQL Server and Server-Startup Programs](preface-and-legal-notices/4-mysql-programs/43-mysql-server-and-server-startup-programs.md)
+      * 4.3.1 mysqld — The MySQL Server
+      * 4.3.2 mysqld\_safe — MySQL Server Startup Scrip
+      * 4.3.3 mysql.server — MySQL Server Startup Script
+      * 4.3.4 mysqld\_multi — Manage Multiple MySQL Servers
+    * [4.4 MySQL Installation-Related Programs](preface-and-legal-notices/4-mysql-programs/44-mysql-installation-related-programs.md)
+      * 4.4.1 comp\_err — Compile MySQL Error Message File
+      * 4.4.2 mysql\_install\_db — Initialize MySQL Data Directory
+      * 4.4.3 mysql\_plugin — Configure MySQL Server Plugins
+      * 4.4.4 mysql\_secure\_installation — Improve MySQL Installation Security
+      * 4.4.5 mysql\_ssl\_rsa\_setup — Create SSL/RSA Files
+      * 4.4.6 mysql\_tzinfo\_to\_sql — Load the Time Zone Tables
+      * 4.4.7 mysql\_upgrade — Check and Upgrade MySQL Tables
+    * [4.5 MySQL Client Programs](preface-and-legal-notices/4-mysql-programs/45-mysql-client-programs.md)
+      * 4.5.1 mysql — The MySQL Command-Line Tool
+      * 4.5.2 mysqladmin — Client for Administering a MySQL Server
+      * 4.5.3 mysqlcheck — A Table Maintenance Program
+      * 4.5.4 mysqldump — A Database Backup Program
+      * 4.5.5 mysqlimport — A Data Import Program
+      * 4.5.6 mysqlpump — A Database Backup Program
+      * 4.5.7 mysqlsh — The MySQL Shell
+      * 4.5.8mysqlshow—DisplayDatabase,Table,andColumnInformation
+      * 4.5.9 mysqlslap — Load Emulation Client
+    * [4.6 MySQL Administrative and Utility Programs](preface-and-legal-notices/4-mysql-programs/46-mysql-administrative-and-utility-programs.md)
+      * 4.6.1 innochecksum — Offline InnoDB File Checksum Utility
+      * 4.6.2 myisam\_ftdump — Display Full-Text Index information
+      * [4.6.3 myisamchk — MyISAM Table-Maintenance Utility](preface-and-legal-notices/4-mysql-programs/46-mysql-administrative-and-utility-programs/463-myisamchk-myisam-table-maintenance-utility.md)
+      * 4.6.4 myisamlog — Display MyISAM Log File Contents
+      * [4.6.5 myisampack —GenerateCompressed,Read-OnlyMyISAMTables](preface-and-legal-notices/4-mysql-programs/46-mysql-administrative-and-utility-programs/465myisampackgeneratecompressedread-onlymyisamtables.md)
+      * 4.6.6 mysql\_config\_editor — MySQL Configuration Utility
+      * 4.6.7 mysqlbinlog — Utility for Processing Binary Log Files
+      * 4.6.8 mysqldumpslow — Summarize Slow Query Log Files
+    * [4.7 MySQL Program Development Utilities](preface-and-legal-notices/4-mysql-programs/47-mysql-program-development-utilities.md)
+      * 4.7.1 mysql\_config — Display Options for Compiling Clients
+      * 4.7.2 my\_print\_defaults — Display Options from Option Files
+      * 4.7.3 resolve\_stack\_dump — Resolve Numeric Stack Trace Dump to Symbols
+    * [4.8 Miscellaneous Programs](preface-and-legal-notices/4-mysql-programs/48-miscellaneous-programs.md)
+      * 4.8.1 lz4\_decompress — Decompress mysqlpump LZ4-Compressed Output
+      * 4.8.2 perror — Explain Error Codes
+      * 4.8.3 replace — A String-Replacement Utility
+      * 4.8.4 resolveip — Resolve Host name to IP Address or Vice Versa
+      * 4.8.5 zlib\_decompress — Decompress mysqlpump ZLIB-Compressed Output
+    * 4.9 MySQL Program Environment Variables
+  * [5 MySQL Server Administration](preface-and-legal-notices/5-mysql-server-administration.md)
+    * [5.1 The MySQL Server](preface-and-legal-notices/5-mysql-server-administration/51-the-mysql-server.md)
+      * 5.1.1 Configuring the Server
+      * 5.1.2 Server Configuration Defaults
+      * 5.1.3 Server Option, System Variable, and Status Variable Reference
+      * 5.1.4 Server System Variable Reference
+      * 5.1.5 Server Status Variable Reference 
+      * 5.1.6 Server Command Options
+      * 5.1.7 Server System Variables
+      * 5.1.8 Using System Variables
+      * 5.1.9 Server Status Variables
+      * 5.1.10 Server SQL Modes
+      * 5.1.11 IPv6 Support
+      * 5.1.12 MySQL Server Time Zone Support
+      * 5.1.13 Server-Side Help
+      * 5.1.14 Server Response to Signals
+      * 5.1.15 The Server Shutdown Process
+    * 5.2 The MySQL Data Directory
+    * 5.3 The mysql System Database
+    * [5.4 MySQL Server Logs](preface-and-legal-notices/5-mysql-server-administration/54-mysql-server-logs.md)
+      * 5.4.1 Selecting General Query and Slow Query Log Output Destinations
+      * 5.4.2 The Error Log
+      * 5.4.3 The General Query Log
+      * 5.4.4 The Binary Log
+      * 5.4.5 The Slow Query Log
+      * 5.4.6 The DDL Log
+      * 5.4.7 Server Log Maintenance
+    * [5.5 MySQL Server Plugins](preface-and-legal-notices/5-mysql-server-administration/55-mysql-server-plugins.md)
+      * 5.5.1 Installing and Uninstalling Plugins
+      * 5.5.2 Obtaining Server Plugin Information
+      * 5.5.3 MySQL Enterprise Thread Pool
+      * 5.5.4 The Rewriter Query Rewrite Plugin
+      * 5.5.5 Version Tokens
+    * [5.6 Running Multiple MySQL Instances on One Machine](preface-and-legal-notices/5-mysql-server-administration/56-running-multiple-mysql-instances-on-one-machine.md)
+      * 5.6.1 Setting Up Multiple Data Directories
+      * 5.6.2 Running Multiple MySQL Instances on Windows
+      * 5.6.3 Running Multiple MySQL Instances on Unix
+      * 5.6.4 Using Client Programs in a Multiple-Server Environment
+    * [5.7 Tracing mysqld Using DTrace](preface-and-legal-notices/5-mysql-server-administration/57-tracing-mysqld-using-dtrace.md)
+      * 5.7.1 mysqld DTrace Probe Reference
+  * [6 Security](preface-and-legal-notices/6-security.md)
+    * [6.1 General Security Issues](preface-and-legal-notices/6-security/61-general-security-issues.md)
+      * 6.1.1 Security Guidelines
+    * 6.2 The MySQL Access Privilege System
+    * 6.3 MySQL User Account Management
+    * 6.4 Using Encrypted Connections
+    * 6.5 Security Plugins
   * 7 Backup and Recovery
   * 8 Optimization
   * 9 Language Structure
