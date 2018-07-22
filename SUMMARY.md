@@ -922,7 +922,7 @@
       * 22.6.3 Partitioning Limitations Relating to Functions
       * 22.6.4 Partitioning and Locking
   * 23 Stored Programs and Views
-  * 24 INFORMATION\_SCHEMA Tables
+  * [24 INFORMATION\_SCHEMA Tables](preface-and-legal-notices/24-informationschema-tables.md)
   * [25 MySQL Performance Schema](preface-and-legal-notices/25-mysql-performance-schema.md)
     * 25.1 Performance Schema Quick Start
     * 25.2 Performance Schema Build Configuration
