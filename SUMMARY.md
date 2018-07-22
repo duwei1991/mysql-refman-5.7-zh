@@ -921,7 +921,14 @@
       * 22.6.2 Partitioning Limitations Relating to Storage Engines
       * 22.6.3 Partitioning Limitations Relating to Functions
       * 22.6.4 Partitioning and Locking
-  * 23 Stored Programs and Views
+  * [23 Stored Programs and Views](preface-and-legal-notices/23-stored-programs-and-views.md)
+    * 23.1 Defining Stored Programs
+    * 23.2 Using Stored Routines \(Procedures and Functions\)
+    * 23.3 Using Triggers
+    * 23.4 Using the Event Scheduler
+    * 23.5 Using Views
+    * 23.6 Access Control for Stored Programs and Views
+    * 23.7 Binary Logging of Stored Programs
   * [24 INFORMATION\_SCHEMA Tables](preface-and-legal-notices/24-informationschema-tables.md)
   * [25 MySQL Performance Schema](preface-and-legal-notices/25-mysql-performance-schema.md)
     * 25.1 Performance Schema Quick Start
