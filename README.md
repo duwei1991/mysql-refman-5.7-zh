@@ -1,3 +1,6 @@
-# My Awesome Book
+# MySQL 5.7参考手册
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+# 包括MySQL NDB Cluster 7.5和NDB Cluster 7.6
+
+
+
