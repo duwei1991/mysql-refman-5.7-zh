@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [Preface and Legal Notices](preface-and-legal-notices.md)
+* [Mysql Refman 5.7](preface-and-legal-notices.md)
   * [1 General Information](preface-and-legal-notices/1-general-information.md)
     * 1.1 About This Manual 
     * [1.2 Typographical and Syntax Conventions](preface-and-legal-notices/1-general-information/12-typographical-and-syntax-conventions.md)
